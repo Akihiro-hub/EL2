@@ -9,12 +9,6 @@ from openpyxl import load_workbook
 from openpyxl.utils.dataframe import dataframe_to_rows
 from openpyxl.styles import Alignment, Border, Side  # 必要なモジュールをインポート
 
-
-import seaborn as sns
-from collections import Counter
-
-import re
-
 # Secretsからパスワードを取得
 PASSWORD = st.secrets["PASSWORD"]
 
