@@ -1,6 +1,4 @@
 streamlit
 matplotlib
 openpyxl
-scikit-learn
-xgboost
 bleach
