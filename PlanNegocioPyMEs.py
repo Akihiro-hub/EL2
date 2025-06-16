@@ -217,7 +217,7 @@ if st.session_state.authenticated:
         flujo_operativoOR = list(utilidad_neta + depreciacion)
         flujo_descuento = flujo_operativoOR / ((1 + tasa_interes / 100) ** np.arange(1, vida_util + 1))
         npv = np.sum(flujo_descuento) - inversion_inicial
-        roi = np.sum(utilidad_antes_impuestos) / inversion_inicial
+        roi = np.sum(utilidad_antes_impuestos)*100 / inversion_inicial
         
         rate = tasa_interes/100
         payback = 1/rate - (1/(rate*(1+rate)**vida_util))
